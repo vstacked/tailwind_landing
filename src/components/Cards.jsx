@@ -1,48 +1,32 @@
 import React from "react";
-import Single from "../assets/single.png";
-import Double from "../assets/double.png";
-import Triple from "../assets/triple.png";
+import { SiTailwindcss, SiXampp, SiReact } from 'react-icons/si'
 
 const Cards = () => {
 
     return (
-        <div className="w-full py-[10rem] px-4 bg-white">
-            <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8">
-                <div className="w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300">
-                    <img className="w-20 mx-auto mt-[-3rem] bg-white" src={Single} alt="" srcset="" />
-                    <h2 className="text-2xl font-bold text-center py-8">Single User</h2>
-                    <p className="text-center text-4xl font-bold">$149</p>
-                    <div className="text-center font-medium">
-                        <p className="py-2 border-b mx-8 mt-8">500 GB Storage</p>
-                        <p className="py-2 border-b mx-8">1 Granted User</p>
-                        <p className="py-2 border-b mx-8">Send up to 2 GB</p>
-                    </div>
-                    <button className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3">Start Trial</button>
+        <section className="w-full p-16 bg-white" id="cards">
+            <h2 className="text-[#00df9a] font-bold text-2xl uppercase text-center">Tech Stack</h2>
+            <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8 ">
+                <div className="w-full shadow-xl flex flex-col items-center p-4 md:my-4 rounded-lg hover:scale-105 duration-300">
+                    <SiReact size={100} color="#61dafb" />
+                    <p className="text-gray-500 text-sm pt-4">
+                        React.js is a powerful JavaScript library used for building interactive and dynamic user interfaces. With its component-based architecture and virtual DOM, React enables developers to create reusable UI components and efficiently update them when the underlying data changes. It provides a declarative approach to UI development, making it easier to describe how the UI should look based on the application state. React's versatility and extensive ecosystem of tools and libraries have made it a popular choice for developing scalable and responsive web applications.
+                    </p>
                 </div>
-                <div className="w-full shadow-xl bg-gray-100 flex flex-col p-4 md:my-0 my-8 rounded-lg hover:scale-105 duration-300">
-                    <img className="w-20 mx-auto mt-[-3rem] bg-transparent" src={Double} alt="" srcset="" />
-                    <h2 className="text-2xl font-bold text-center py-8">Single User</h2>
-                    <p className="text-center text-4xl font-bold">$149</p>
-                    <div className="text-center font-medium">
-                        <p className="py-2 border-b mx-8 mt-8">500 GB Storage</p>
-                        <p className="py-2 border-b mx-8">1 Granted User</p>
-                        <p className="py-2 border-b mx-8">Send up to 2 GB</p>
-                    </div>
-                    <button className="bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3">Start Trial</button>
+                <div className="w-full shadow-xl flex flex-col items-center p-4 md:my-4 rounded-lg hover:scale-105 duration-300">
+                    <SiTailwindcss size={100} color="#01b7d6" />
+                    <p className="text-gray-500 text-sm pt-4">
+                        Tailwind CSS is a utility-first CSS framework that provides a comprehensive set of pre-built classes to rapidly build modern and responsive user interfaces. It promotes a highly customizable and low-level approach to styling, allowing developers to easily compose and design their UI components. With Tailwind CSS, you can quickly apply utility classes directly in your HTML markup, eliminating the need for writing custom CSS. It offers a wide range of utility classes for spacing, typography, flexbox, grid layouts, and more, giving developers great flexibility and efficiency in crafting unique designs. By leveraging Tailwind CSS, developers can streamline their styling workflow, achieve consistent designs, and build visually appealing and responsive web applications.
+                    </p>
                 </div>
-                <div className="w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300">
-                    <img className="w-20 mx-auto mt-[-3rem] bg-white" src={Triple} alt="" srcset="" />
-                    <h2 className="text-2xl font-bold text-center py-8">Single User</h2>
-                    <p className="text-center text-4xl font-bold">$149</p>
-                    <div className="text-center font-medium">
-                        <p className="py-2 border-b mx-8 mt-8">500 GB Storage</p>
-                        <p className="py-2 border-b mx-8">1 Granted User</p>
-                        <p className="py-2 border-b mx-8">Send up to 2 GB</p>
-                    </div>
-                    <button className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3">Start Trial</button>
+                <div className="w-full shadow-xl flex flex-col items-center p-4 md:my-4 rounded-lg hover:scale-105 duration-300">
+                    <SiXampp size={100} color="#fb7a24" />
+                    <p className="text-gray-500 text-sm pt-4">
+                        XAMPP is a cross-platform software package that provides an easy-to-install and all-in-one solution for setting up a local web server environment. The name XAMPP stands for Apache, MySQL/MariaDB, PHP, and Perl, which are the core components included in the package. XAMPP is widely used by developers for local web development and testing purposes. It provides a user-friendly control panel to start and stop the server services, and it also includes additional tools like phpMyAdmin for managing databases and FileZilla FTP server for file transfer. With XAMPP, developers can quickly create a local server environment on their computer, enabling them to develop, debug, and test their web applications efficiently before deploying them to a live server.
+                    </p>
                 </div>
             </div>
-        </div>
+        </section>
     )
 
 }
